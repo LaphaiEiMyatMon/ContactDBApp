@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="16dp"
+        android:text="''Contact Form''"
+        android:textSize="24sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+
+        <!-- Default avatar image -->
+
+        <ImageView
+            android:id="@+id/chooseAvatar"
+            android:layout_width="120dp"
+            android:padding="1dp"
+            android:layout_height="119dp"
+            android:src="@drawable/profileone" />
+
+        <Button
+            android:id="@+id/buttonChooseAvatar"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+
+            android:backgroundTint="#3F51B5"
+            android:text="Change Avatar"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+    <!-- Name -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <!-- Date of Birth -->
+    <TextView
+        android:id="@+id/textViewDOB"
+        android:layout_marginTop="45dp"
+
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:hint="Choose Date of Birth" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="7dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Save Details"
+            android:textSize="18dp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/buttonView"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#3F51B5"
+            android:text="View Details"
+            android:textSize="18dp"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
